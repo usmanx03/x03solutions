@@ -6,6 +6,9 @@
     <title>X03 Solutions - Solutions that Just Work</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('assets/stylesheets/style.css') }}">
+
     <script>
         tailwind.config = {
             theme: {
@@ -28,58 +31,6 @@
             }
         }
     </script>
-    <style>
-        /* Custom animations and styles for modern interactions */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 20px rgba(8, 145, 178, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 30px rgba(8, 145, 178, 0.5);
-            }
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #0891b2, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .glass-effect {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.9);
-        }
-
-        .hover-lift {
-            transition: all 0.3s ease;
-        }
-
-        .hover-lift:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body class="font-body text-foreground leading-relaxed overflow-x-hidden">
 <!-- Modern floating header with glass effect -->
@@ -103,11 +54,12 @@
 </header>
 
 <!-- Hero section with modern animations and better typography -->
-<section id="home"
-         class="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/50 to-background relative overflow-hidden pt-20">
+<section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-50 via-teal-100 to-white relative overflow-hidden pt-20">
+
     <!-- Floating background elements -->
-    <div class="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style="animation-delay: -1s;"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style="animation-delay: -1s;"></div>
+
 
     <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
         <div class="animate-fade-in-up">
