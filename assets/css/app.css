@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .font-display {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Strict font rendering synchronization across the display stack */
+    #hero-typing-title {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 800;
+    }
+}
+
+@layer utilities {
+    .fallback-hide {
+        transition: opacity 0.3s ease;
+    }
+}
