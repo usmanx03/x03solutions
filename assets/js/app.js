@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('hero-typing-title');
     if (!typingElement) return;
 
-    // Phrases: short, surgical, a senior engineer would say these
     const phrases = [
-        "load.",
-        "pressure.",
-        "bad queries.",
-        "memory leaks.",
-        "race conditions.",
-        "broken deploys.",
+        "complexity.",
+        "over-engineering.",
+        "hiccups.",
+        "security issues.",
+        "data loss.",
+        "compliance concerns.",
+        "slowdowns.",
     ];
 
     let phraseIndex = 0;

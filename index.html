@@ -3,221 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>x03solutions | Architecture & Engineering</title>
+    <title>x03solutions | Radically Simple Systems</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Source+Code+Pro:wght@400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Source+Code+Pro:wght@400;500;600&display=swap"
           rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/app.css">
     <script type="module" src="./assets/js/app.js"></script>
 </head>
-<body class="min-h-screen bg-[#0b0f19] text-[#e0e7ff]/80 font-sans tracking-normal selection:bg-cyan-500/20 selection:text-white overflow-x-hidden">
+<body class="min-h-screen bg-[#070a13] text-[#e2e8f0]/80 font-sans tracking-normal selection:bg-cyan-500/20 selection:text-white overflow-x-hidden">
 
-<header class="w-full select-none relative z-0 overflow-hidden pt-8 md:pt-12">
-    <div class="text-[13vw] font-extrabold tracking-tighter text-[#1e293b]/20 font-display leading-none uppercase pointer-events-none select-none text-center whitespace-nowrap">
+<header class="w-full select-none relative z-0 overflow-hidden pt-12 md:pt-16">
+    <div class="text-[12vw] font-extrabold tracking-tighter text-[#1e293b]/15 font-display leading-none uppercase pointer-events-none select-none text-center whitespace-nowrap">
         x03solutions
     </div>
 </header>
 
-<main class="max-w-4xl mx-auto px-6 pb-24 space-y-28 relative z-10 -mt-[4vw]">
+<main class="max-w-5xl mx-auto px-6 pb-24 space-y-32 relative z-10 -mt-[4vw]">
 
     <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 space-y-6">
             <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight font-display">
-                We design and support application backends that avoid <span id="hero-typing-title"
-                                                                            class="text-cyan-400 border-r-2 border-cyan-400/60 pr-1 italic">slowdowns.</span>
+                We build systems that avoid <br>
+                <span id="hero-typing-title" class="text-cyan-400 border-r-2 border-cyan-400/60 pr-1 italic">
+                    slowdowns.
+                </span>
             </h1>
-            <p class="text-base text-[#aeb3c1] leading-relaxed">
-                We handle the heavy lifting behind your application layout. From core data structures to raw server deployments, we focus on flat, reliable
+            <p class="text-base text-[#94a3b8] leading-relaxed">
+                We handle the heavy lifting behind your application architecture. From core data structures to raw server deployments, we focus on flat,
+                reliable
                 solutions that allow software teams to deploy code comfortably and handle traffic without unexpected disruptions.
             </p>
         </div>
 
-        <!-- Hero: Premium Distributed Node Mesh Schematic -->
-        <div class="lg:col-span-5 h-56 lg:h-64 relative pointer-events-none select-none flex items-center justify-center">
-            <svg class="w-full h-full max-w-[280px]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- System Horizon Grid Lines -->
-                <line x1="10" y1="100" x2="190" y2="100" stroke="#293652" stroke-width="0.75" opacity="0.3"/>
-                <line x1="30" y1="60" x2="170" y2="60" stroke="#293652" stroke-width="0.75" opacity="0.2"/>
-                <line x1="30" y1="140" x2="170" y2="140" stroke="#293652" stroke-width="0.75" opacity="0.2"/>
-
-                <!-- Core Async Pipeline Paths -->
-                <path d="M 20 100 Q 60 40, 100 100 T 180 100" stroke="#293652" stroke-width="1.25" stroke-dasharray="3 3" opacity="0.5"/>
-                <path d="M 20 100 C 70 130, 130 50, 180 100" stroke="#22d3ee" stroke-width="1.5" opacity="0.8" stroke-linecap="round"/>
-
-                <!-- Intersecting Infrastructure Keys -->
-                <line x1="60" y1="70" x2="60" y2="130" stroke="#293652" stroke-width="1" stroke-dasharray="2 2"/>
-                <line x1="100" y1="50" x2="100" y2="150" stroke="#293652" stroke-width="1" opacity="0.4"/>
-                <line x1="140" y1="70" x2="140" y2="130" stroke="#293652" stroke-width="1" stroke-dasharray="2 2"/>
-
-                <!-- System State Nodes -->
-                <circle cx="60" cy="83" r="2.5" fill="#0b0f19" stroke="#293652" stroke-width="1.5"/>
-                <circle cx="100" cy="100" r="4.5" fill="#22d3ee"/>
-                <circle cx="100" cy="100" r="12" fill="#22d3ee" opacity="0.1"/>
-                <circle cx="140" cy="113" r="2.5" fill="#0b0f19" stroke="#22d3ee" stroke-width="1.5"/>
-
-                <!-- Structural Edge Terminators -->
-                <rect x="17" y="98" width="4" height="4" fill="#293652" opacity="0.6"/>
-                <rect x="179" y="98" width="4" height="4" fill="#22d3ee" opacity="0.6"/>
-            </svg>
+        <div class="lg:col-span-5 w-full overflow-hidden flex items-center justify-center">
+            <img src="./assets/media/images/c1s2.png" alt="System Supervisor Implementation"
+                 class="w-full h-auto object-cover select-none pointer-events-none">
         </div>
     </section>
 
-    <section class="border-y border-[#293652]/20 py-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="space-y-1">
+    <section class="bg-[#0b0f19] border border-[#1e293b] rounded-xl py-10 px-8 shadow-md">
+        <div class="grid grid-cols-2 md:grid-cols-4">
+
+            <div class="text-center space-y-1 px-4 md:px-6 border-r border-b md:border-b-0 border-[#1e293b]">
                 <div class="text-3xl font-bold text-white font-display tracking-tight">3</div>
-                <div class="text-xs font-medium text-[#878c9d] tracking-wide uppercase">Products shipped</div>
+                <div class="text-xs font-semibold text-[#64748b] tracking-wider">
+                    Products shipped
+                </div>
             </div>
-            <div class="space-y-1">
+
+            <div class="text-center space-y-1 px-4 md:px-6 border-b md:border-b-0 md:border-r border-[#1e293b]">
                 <div class="text-3xl font-bold text-white font-display tracking-tight">10+</div>
-                <div class="text-xs font-medium text-[#878c9d] tracking-wide uppercase">Clients supported</div>
+                <div class="text-xs font-semibold text-[#64748b] tracking-wider">
+                    Clients supported
+                </div>
             </div>
-            <div class="space-y-1">
+
+            <div class="text-center space-y-1 px-4 md:px-6 border-r border-[#1e293b]">
                 <div class="text-3xl font-bold text-white font-display tracking-tight">1,000+</div>
-                <div class="text-xs font-medium text-[#878c9d] tracking-wide uppercase">Bugs resolved</div>
+                <div class="text-xs font-semibold text-[#64748b] tracking-wider">
+                    Bugs resolved
+                </div>
             </div>
-            <div class="space-y-1">
+
+            <div class="text-center space-y-1 px-4 md:px-6">
                 <div class="text-3xl font-bold text-white font-display tracking-tight">99.9%</div>
-                <div class="text-xs font-medium text-[#878c9d] tracking-wide uppercase">Target uptime</div>
+                <div class="text-xs font-semibold text-[#64748b] tracking-wider">
+                    Target uptime
+                </div>
             </div>
+
         </div>
     </section>
 
     <section class="space-y-10">
         <div class="max-w-xl space-y-2">
-            <h2 class="text-2xl font-bold text-white font-display tracking-tight">Core specializations</h2>
-            <p class="text-sm text-[#878c9d] leading-relaxed">
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white font-display">Core specializations</h2>
+            <p class="text-base text-[#94a3b8] leading-relaxed">
                 We work across the entire stack, choosing standard, battle tested options that match what your engineering team actually needs to maintain.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            <div class="bg-[#0f1524]/30 border border-[#293652]/30 rounded-xl p-6 space-y-4 hover:border-[#293652]/60 transition-colors">
-                <h3 class="text-sm font-semibold text-white tracking-wide uppercase text-cyan-400/90">Backend Logic & Systems</h3>
-                <p class="text-xs text-[#aeb3c1] leading-relaxed">
-                    We design resilient distributed architectures, establishing crisp domain boundaries, asynchronous event pipelines, and robust API contracts
-                    to ensure entire service ecosystems scale predictably under load.
+            <div class="bg-[#0b0f19] border border-[#1e293b] rounded-xl p-6 space-y-4 hover:border-[#334155] transition-colors shadow-sm">
+                <h3 class="text-sm font-bold text-cyan-400 tracking-wider">Backend Systems</h3>
+                <p class="text-xs text-[#94a3b8] leading-relaxed">
+                    We design resilient distributed architectures, establishing clear domain boundaries, asynchronous event pipelines, and robust API contracts
+                    to ensure entire service ecosystems scales predictably under load.
                 </p>
-                <!-- Standardized higher margin (mt-6) and padding (pt-4) for clean segregation -->
-                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#293652]/20 items-center">
-                    <img src="./assets/media/images/php_logo.png" alt="PHP" class="h-6 w-auto object-contain" title="PHP">
-                    <img src="./assets/media/images/laravel_logo.png" alt="Laravel" class="h-6 w-auto object-contain" title="Laravel">
-                    <img src="./assets/media/images/node_js_logo.png" alt="Node.js" class="h-6 w-auto object-contain" title="Node.js">
-                    <img src="./assets/media/images/nest_js_logo.svg" alt="NestJS" class="h-6 w-auto object-contain" title="NestJS">
+                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#1e293b] items-center">
+                    <img src="./assets/media/images/php_logo.png" alt="PHP"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="PHP">
+                    <img src="./assets/media/images/laravel_logo.png" alt="Laravel"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Laravel">
+                    <img src="./assets/media/images/node_js_logo.png" alt="Node.js"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Node.js">
+                    <img src="./assets/media/images/nest_js_logo.svg" alt="NestJS"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="NestJS">
                 </div>
             </div>
 
-            <div class="bg-[#0f1524]/30 border border-[#293652]/30 rounded-xl p-6 space-y-4 hover:border-[#293652]/60 transition-colors">
-                <h3 class="text-sm font-semibold text-white tracking-wide uppercase text-cyan-400/90">Data Storage & Optimization</h3>
-                <p class="text-xs text-[#aeb3c1] leading-relaxed">
+            <div class="bg-[#0b0f19] border border-[#1e293b] rounded-xl p-6 space-y-4 hover:border-[#334155] transition-colors shadow-sm">
+                <h3 class="text-sm font-bold text-cyan-400 tracking-wider">Databases</h3>
+                <p class="text-xs text-[#94a3b8] leading-relaxed">
                     We architect schema designs built for strict data integrity and high throughput. From indexing strategies and connection pooling to
                     in-memory caching layers, we keep your state transitions fast and durable.
                 </p>
-                <!-- Standardized higher margin (mt-6) and padding (pt-4) for clean segregation -->
-                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#293652]/20 items-center">
-                    <img src="./assets/media/images/postgresql_logo.png" alt="PostgreSQL" class="h-6 w-auto object-contain" title="PostgreSQL">
-                    <img src="./assets/media/images/mysql_logo.avif" alt="MySQL" class="h-6 w-auto object-contain" title="MySQL">
-                    <img src="./assets/media/images/microsoft_sql_server_logo.png" alt="MSSQL" class="h-6 w-auto object-contain" title="MSSQL">
-                    <img src="./assets/media/images/sqlite_logo.png" alt="SQLite" class="h-6 w-auto object-contain" title="SQLite">
-                    <img src="./assets/media/images/redis_logo.png" alt="Redis" class="h-6 w-auto object-contain" title="Redis">
+                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#1e293b] items-center">
+                    <img src="./assets/media/images/postgresql_logo.png" alt="PostgreSQL"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="PostgreSQL">
+                    <img src="./assets/media/images/mysql_logo.avif" alt="MySQL"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="MySQL">
+                    <img src="./assets/media/images/microsoft_sql_server_logo.png" alt="MSSQL"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="MSSQL">
+                    <img src="./assets/media/images/sqlite_logo.png" alt="SQLite"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="SQLite">
+                    <img src="./assets/media/images/redis_logo.png" alt="Redis"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Redis">
                 </div>
             </div>
 
-            <div class="bg-[#0f1524]/30 border border-[#293652]/30 rounded-xl p-6 space-y-4 hover:border-[#293652]/60 transition-colors">
-                <h3 class="text-sm font-semibold text-white tracking-wide uppercase text-cyan-400/90">Infrastructure & Deployments</h3>
-                <p class="text-xs text-[#aeb3c1] leading-relaxed">
-                    We manage raw bare-metal setups and cloud clusters directly. We build secure container environments, continuous deployment pipelines, and
+            <div class="bg-[#0b0f19] border border-[#1e293b] rounded-xl p-6 space-y-4 hover:border-[#334155] transition-colors shadow-sm">
+                <h3 class="text-sm font-bold text-cyan-400 tracking-wider">Infrastructure</h3>
+                <p class="text-xs text-[#94a3b8] leading-relaxed">
+                    We manage deployments from cloud vms to raw bare-metal setups. We build secure continuous deployment pipelines, container environments, and
                     custom server orchestration without vendor lock-in.
                 </p>
-                <!-- Standardized higher margin (mt-6) and padding (pt-4) for clean segregation -->
-                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#293652]/20 items-center">
-                    <img src="./assets/media/images/linux_logo.png" alt="Linux" class="h-6 w-auto object-contain" title="Linux Servers">
-                    <img src="./assets/media/images/docker_logo.png" alt="Docker" class="h-6 w-auto object-contain" title="Docker Containers">
-                    <img src="./assets/media/images/hetzner_logo.png" alt="Hetzner" class="h-6 w-auto object-contain" title="Hetzner">
-                    <img src="./assets/media/images/digital_ocean_logo.png" alt="DigitalOcean" class="h-6 w-auto object-contain" title="DigitalOcean">
-                    <img src="./assets/media/images/aws_logo.png" alt="AWS" class="h-6 w-auto object-contain" title="AWS">
+                <div class="flex flex-wrap gap-3.5 mt-6 pt-4 border-t border-[#1e293b] items-center">
+                    <img src="./assets/media/images/linux_logo.png" alt="Linux"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Linux Servers">
+                    <img src="./assets/media/images/docker_logo.png" alt="Docker"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Docker Containers">
+                    <img src="./assets/media/images/hetzner_logo.png" alt="Hetzner"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="Hetzner">
+                    <img src="./assets/media/images/digital_ocean_logo.png" alt="DigitalOcean"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="DigitalOcean">
+                    <img src="./assets/media/images/aws_logo.png" alt="AWS"
+                         class="h-7 w-auto object-contain brightness-90 transition-all" title="AWS">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <!-- Approach: Premium Memory Optimization/Stream Routing Layout -->
-        <div class="lg:col-span-5 h-56 lg:h-64 relative pointer-events-none select-none flex items-center justify-center">
-            <svg class="w-full h-full max-w-[280px]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Parallel processing tracks -->
-                <path d="M 20 50 L 80 50 L 110 90 L 180 90" stroke="#293652" stroke-width="1" opacity="0.4"/>
-                <path d="M 20 90 L 60 90 L 90 130 L 150 130 L 170 105" stroke="#293652" stroke-width="1" opacity="0.3" stroke-dasharray="3 3"/>
-                <path d="M 20 130 L 70 130 L 100 90 L 180 90" stroke="#293652" stroke-width="1.25" opacity="0.5"/>
-
-                <!-- The Optimizing High-Throughput Highway -->
-                <path d="M 40 170 L 90 120 L 130 120 L 160 70 L 190 70" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
-
-                <!-- Vector System Breakpoints & Registers -->
-                <line x1="80" y1="45" x2="80" y2="55" stroke="#293652" stroke-width="1.5"/>
-                <line x1="100" y1="85" x2="100" y2="95" stroke="#293652" stroke-width="1.5"/>
-                <line x1="130" y1="115" x2="130" y2="125" stroke="#22d3ee" stroke-width="1.5"/>
-
-                <!-- Data Flow Interceptors -->
-                <circle cx="90" cy="120" r="2.5" fill="#0b0f19" stroke="#22d3ee" stroke-width="1.5"/>
-                <circle cx="160" cy="70" r="3" fill="#22d3ee"/>
-                <circle cx="110" cy="90" r="2" fill="#293652"/>
-
-                <!-- Fine-line engineering micro-grid detail -->
-                <g stroke="#293652" stroke-width="0.5" opacity="0.2">
-                    <circle cx="160" cy="70" r="8" stroke-dasharray="2 1"/>
-                    <line x1="160" y1="58" x2="160" y2="82"/>
-                    <line x1="148" y1="70" x2="172" y2="70"/>
-                </g>
-            </svg>
+        <div class="lg:col-span-5 w-full  overflow-hidden flex items-center justify-center object-cover select-none pointer-events-none">
+            <img src="./assets/media/images/c2s2.png" alt="Pipeline Architecture Implementation" class="w-full h-auto object-cover">
         </div>
 
         <div class="lg:col-span-7 space-y-4">
-            <h2 class="text-2xl font-bold text-white font-display tracking-tight">Our approach</h2>
-            <p class="text-sm text-[#aeb3c1] leading-relaxed">
-                We work directly inside your current stack. Our process focuses on identifying application bottlenecks, isolating broken database transactions,
-                and writing clean backend architecture that your engineers can easily build upon.
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white font-display">Our approach</h2>
+            <p class="text-base text-[#94a3b8] leading-relaxed">
+                We start by understanding your requirements and any current systems in place. Then planning the architecture and necessary development. And
+                after this short documentation process we start working on the project.
             </p>
-            <p class="text-sm text-[#aeb3c1] leading-relaxed">
-                We do not recommend massive rewrites or bring in complicated vendor tools. We resolve the core friction directly so you can scale comfortably.
+            <p class="text-base text-[#94a3b8] leading-relaxed">
+                This involves development milestones and meetings with the stakeholders
+                for staying updated. After development and finalization we deploy the project. After that we document everything and handover the project to
+                you.
+            </p>
+            <p class="text-base text-[#94a3b8] leading-relaxed">
+                We are very flexible wit hour workflows. We can align our workflows with your workflows in place.
             </p>
         </div>
     </section>
 
-    <section class="bg-[#0f1524]/40 border border-[#293652]/40 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+    <section class="bg-[#0b0f19] border border-[#1e293b] rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
         <div class="absolute -top-12 -right-12 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-2xl space-y-3">
-            <h2 class="text-2xl font-bold text-white font-display tracking-tight">Get in touch</h2>
-            <p class="text-sm text-[#aeb3c1] leading-relaxed">
-                If your team is tracking down platform slowdowns, structuring deployment architectures, or setting up new environment servers, let us talk. You
-                will reach a senior developer directly.
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white font-display">Just ping us</h2>
+            <p class="text-base text-[#94a3b8] leading-relaxed">
+                No matter if you have an idea, a complete blueprint or a system already in place, we can help you get started. You can contact us and discuss
+                what the possible steps are for your ideas.
             </p>
         </div>
 
-        <div class="pt-6 mt-8 border-t border-[#293652]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
-            <div class="text-[#aeb3c1]">
-                <span class="text-cyan-400 font-medium mr-2 font-mono">Email:</span>
-                <a href="mailto:hello@x03solutions.com" class="text-white hover:underline font-medium">hello@x03solutions.com</a>
+        <div class="pt-6 mt-8 border-t border-[#1e293b]/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-base">
+            <div class="text-[#94a3b8]">
+                <span class="text-cyan-400 font-medium mr-2">Email:</span>
+                <a href="mailto:hello@x03solutions.com" class="text-white hover:underline">usmanzahidx03@gmail.com</a>
             </div>
-            <div class="text-[#878c9d] font-mono text-[11px]">
-                We reply within twelve hours
+            <div class="text-[#64748b] text-[11px]">
+                We reply within hours
             </div>
         </div>
     </section>
 
 </main>
 
-<footer class="text-[#878c9d] text-xs py-12 border-t border-[#293652]/20">
-    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+<footer class="text-[#64748b] text-xs py-12 border-t border-[#1e293b]">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
             <span class="text-white font-medium">&copy; 2026 x03solutions.</span>
-            <span class="text-[#878c9d]/50">Pragmatic architecture and backend engineering</span>
+            <span class="text-[#475569]">Simple, Dependable Systems That Work.</span>
         </div>
-        <div class="text-[11px] text-[#293652] font-mono tracking-wider">31.5204° N, 74.3587° E</div>
     </div>
 </footer>
 
