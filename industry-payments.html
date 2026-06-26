@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment & Billing Systems — X03solutions</title>
-    <meta name="description" content="Payment integrations, billing platforms, and invoice systems built by X03solutions. Practical software for businesses that need to get paid reliably.">
+    <meta name="description"
+          content="Payment integrations, billing platforms, and invoice systems built by X03solutions. Practical software for businesses that need to get paid reliably.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Code+Pro:wght@600;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/app.css">
     <script type="module" src="./assets/js/app.js"></script>
 </head>
@@ -19,51 +21,239 @@
         <a href="./index.html" class="nav-logo"><span class="nav-logo-x03">X03</span><span class="nav-logo-sol">solutions</span></a>
         <div class="nav-links">
             <div class="nav-item">
-                <button class="nav-link" aria-haspopup="true">Solutions <svg class="nav-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="mega-menu"><div class="container-xl"><div class="mega-inner">
-                    <div class="mega-col"><div class="mega-section-title">Cloud & Infrastructure</div>
-                        <a href="./solutions.html#cloud" class="mega-link"><div><div class="mega-link-title">Cloud Architecture</div><div class="mega-link-desc">Scalable, reliable cloud systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#cloud" class="mega-link"><div><div class="mega-link-title">Server & Deployment</div><div class="mega-link-desc">Production-grade infrastructure</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#cloud" class="mega-link"><div><div class="mega-link-title">System Migration</div><div class="mega-link-desc">Move without disruption</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <button class="nav-link" aria-haspopup="true">Solutions
+                    <svg class="nav-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="mega-menu">
+                    <div class="container-xl">
+                        <div class="mega-inner">
+                            <div class="mega-col">
+                                <div class="mega-section-title">Cloud & Infrastructure</div>
+                                <a href="./solutions.html#cloud" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Cloud Architecture</div>
+                                        <div class="mega-link-desc">Scalable, reliable cloud systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#cloud" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Server & Deployment</div>
+                                        <div class="mega-link-desc">Production-grade infrastructure</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#cloud" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">System Migration</div>
+                                        <div class="mega-link-desc">Move without disruption</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">Custom Software</div>
+                                <a href="./solutions.html#software" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Business Applications</div>
+                                        <div class="mega-link-desc">Built around your operations</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#software" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">API & Integration</div>
+                                        <div class="mega-link-desc">Connect your systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#software" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Internal Tools</div>
+                                        <div class="mega-link-desc">Admin panels, dashboards, workflows</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">AI & Automation</div>
+                                <a href="./solutions.html#ai" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">AI-Powered Agents</div>
+                                        <div class="mega-link-desc">Automate complex business tasks</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#ai" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Process Automation</div>
+                                        <div class="mega-link-desc">Eliminate manual workflows</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#ai" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Intelligent Assistants</div>
+                                        <div class="mega-link-desc">Support and internal copilots</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">Digital Platforms</div>
+                                <a href="./solutions.html#platforms" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Enterprise Platforms</div>
+                                        <div class="mega-link-desc">Multi-tenant, large-scale systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#platforms" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Customer Portals</div>
+                                        <div class="mega-link-desc">Client-facing digital products</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./solutions.html#platforms" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">SaaS Development</div>
+                                        <div class="mega-link-desc">Products built to grow</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <div class="mega-footer-strip"><a href="./solutions.html" class="mega-footer-link">View all solutions
+                                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mega-col"><div class="mega-section-title">Custom Software</div>
-                        <a href="./solutions.html#software" class="mega-link"><div><div class="mega-link-title">Business Applications</div><div class="mega-link-desc">Built around your operations</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#software" class="mega-link"><div><div class="mega-link-title">API & Integration</div><div class="mega-link-desc">Connect your systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#software" class="mega-link"><div><div class="mega-link-title">Internal Tools</div><div class="mega-link-desc">Admin panels, dashboards, workflows</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="mega-col"><div class="mega-section-title">AI & Automation</div>
-                        <a href="./solutions.html#ai" class="mega-link"><div><div class="mega-link-title">AI-Powered Agents</div><div class="mega-link-desc">Automate complex business tasks</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#ai" class="mega-link"><div><div class="mega-link-title">Process Automation</div><div class="mega-link-desc">Eliminate manual workflows</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#ai" class="mega-link"><div><div class="mega-link-title">Intelligent Assistants</div><div class="mega-link-desc">Support and internal copilots</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="mega-col"><div class="mega-section-title">Digital Platforms</div>
-                        <a href="./solutions.html#platforms" class="mega-link"><div><div class="mega-link-title">Enterprise Platforms</div><div class="mega-link-desc">Multi-tenant, large-scale systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#platforms" class="mega-link"><div><div class="mega-link-title">Customer Portals</div><div class="mega-link-desc">Client-facing digital products</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./solutions.html#platforms" class="mega-link"><div><div class="mega-link-title">SaaS Development</div><div class="mega-link-desc">Products built to grow</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <div class="mega-footer-strip"><a href="./solutions.html" class="mega-footer-link">View all solutions <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
-                    </div>
-                </div></div></div>
+                </div>
             </div>
             <div class="nav-item">
-                <button class="nav-link active" aria-haspopup="true">Industries <svg class="nav-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="mega-menu"><div class="container-xl"><div class="mega-inner">
-                    <div class="mega-col"><div class="mega-section-title">Healthcare</div>
-                        <a href="./industry-healthcare.html" class="mega-link"><div><div class="mega-link-title">Medical Systems</div><div class="mega-link-desc">Clinical software for care teams</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./industry-healthcare.html" class="mega-link"><div><div class="mega-link-title">Patient Platforms</div><div class="mega-link-desc">Scheduling, records and portals</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <button class="nav-link active" aria-haspopup="true">Industries
+                    <svg class="nav-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="mega-menu">
+                    <div class="container-xl">
+                        <div class="mega-inner">
+                            <div class="mega-col">
+                                <div class="mega-section-title">Healthcare</div>
+                                <a href="./industry-healthcare.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Medical Systems</div>
+                                        <div class="mega-link-desc">Clinical software for care teams</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./industry-healthcare.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Patient Platforms</div>
+                                        <div class="mega-link-desc">Scheduling, records and portals</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">Finance & Payments</div>
+                                <a href="./industry-payments.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Payment Systems</div>
+                                        <div class="mega-link-desc">Checkout, billing and invoicing</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./industry-payments.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Billing Platforms</div>
+                                        <div class="mega-link-desc">Subscription and invoice systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">Logistics & Retail</div>
+                                <a href="./industry-warehouse.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Warehouse Management</div>
+                                        <div class="mega-link-desc">Inventory and fulfilment systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./industry-retail.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Retail & Apparel</div>
+                                        <div class="mega-link-desc">Tailor management and order systems</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mega-col">
+                                <div class="mega-section-title">Enterprise & Other</div>
+                                <a href="./industry-enterprise.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Enterprise Applications</div>
+                                        <div class="mega-link-desc">Internal tools and large-scale ops</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="./industry-other.html" class="mega-link">
+                                    <div>
+                                        <div class="mega-link-title">Other Industries</div>
+                                        <div class="mega-link-desc">Don't see yours? Start here</div>
+                                    </div>
+                                    <svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mega-col"><div class="mega-section-title">Finance & Payments</div>
-                        <a href="./industry-payments.html" class="mega-link"><div><div class="mega-link-title">Payment Systems</div><div class="mega-link-desc">Checkout, billing and invoicing</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./industry-payments.html" class="mega-link"><div><div class="mega-link-title">Billing Platforms</div><div class="mega-link-desc">Subscription and invoice systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="mega-col"><div class="mega-section-title">Logistics & Retail</div>
-                        <a href="./industry-warehouse.html" class="mega-link"><div><div class="mega-link-title">Warehouse Management</div><div class="mega-link-desc">Inventory and fulfilment systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./industry-retail.html" class="mega-link"><div><div class="mega-link-title">Retail & Apparel</div><div class="mega-link-desc">Tailor management and order systems</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="mega-col"><div class="mega-section-title">Enterprise & Other</div>
-                        <a href="./industry-enterprise.html" class="mega-link"><div><div class="mega-link-title">Enterprise Applications</div><div class="mega-link-desc">Internal tools and large-scale ops</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                        <a href="./industry-other.html" class="mega-link"><div><div class="mega-link-title">Other Industries</div><div class="mega-link-desc">Don't see yours? Start here</div></div><svg class="mega-link-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                    </div>
-                </div></div></div>
+                </div>
             </div>
             <a href="./philosophy.html" class="nav-link" data-page="philosophy.html">Philosophy</a>
             <a href="./contact.html" class="nav-link" data-page="contact.html">Contact</a>
@@ -71,8 +261,15 @@
         <div style="display:flex;align-items:center;gap:0.75rem;">
             <a href="./contact.html" class="nav-cta">Start a Project</a>
             <button id="mobile-menu-btn" class="nav-mobile-btn" aria-label="Open menu" aria-expanded="false">
-                <svg id="icon-open" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-                <svg id="icon-close" class="hidden" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <svg id="icon-open" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+                <svg id="icon-close" class="hidden" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
             </button>
         </div>
     </div>
@@ -103,12 +300,18 @@
 <section class="page-hero">
     <div class="container-xl">
         <div style="display:flex;align-items:center;gap:0.875rem;margin-bottom:1.5rem;" data-reveal>
-            <div class="domain-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+            <div class="domain-icon">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+            </div>
             <span class="section-label">Finance & Payments</span>
         </div>
         <div style="max-width:680px;" data-reveal>
             <h1 class="t-hero" style="font-size:2.75rem;margin-bottom:1.25rem;">Getting paid should be the easy part of running your business.</h1>
-            <p class="t-body" style="font-size:1.0625rem;max-width:560px;">We build the payment and billing systems that sit behind your product. Checkout flows, invoice delivery, subscription billing, and the reporting your team needs to make sense of it all.</p>
+            <p class="t-body" style="font-size:1.0625rem;max-width:560px;">We build the payment and billing systems that sit behind your product. Checkout
+                flows, invoice delivery, subscription billing, and the reporting your team needs to make sense of it all.</p>
         </div>
     </div>
 </section>
@@ -120,15 +323,21 @@
             <div data-reveal>
                 <div class="section-label" style="margin-bottom:1.25rem;">What we see</div>
                 <h2 class="t-section" style="font-size:1.5rem;margin-bottom:1.25rem;">Most payment problems aren't about technology. They're about trust.</h2>
-                <p class="t-body" style="margin-bottom:1rem;">A customer who sees a payment fail, even once, loses confidence. An invoice that goes to the wrong address, or a subscription that keeps charging after a cancellation, creates problems that take far longer to fix than they took to cause. The systems that handle money have to get the details right, consistently.</p>
-                <p class="t-body" style="margin-bottom:1rem;">We've worked with businesses that had payment systems built quickly and bolted together. Checkout worked most of the time. Invoices went out, but reconciling them against bank statements was manual work. Failed payments fell into a queue that someone checked every few days. These weren't crises. They were slow leaks that cost time and eroded trust.</p>
-                <p class="t-body">What we build is different because we start with the full picture: how money flows through your business, where the edge cases are, and what your team actually needs to stay on top of it without heroics.</p>
+                <p class="t-body" style="margin-bottom:1rem;">A customer who sees a payment fail, even once, loses confidence. An invoice that goes to the wrong
+                    address, or a subscription that keeps charging after a cancellation, creates problems that take far longer to fix than they took to cause.
+                    The systems that handle money have to get the details right, consistently.</p>
+                <p class="t-body" style="margin-bottom:1rem;">We've worked with businesses that had payment systems built quickly and bolted together. Checkout
+                    worked most of the time. Invoices went out, but reconciling them against bank statements was manual work. Failed payments fell into a queue
+                    that someone checked every few days. These weren't crises. They were slow leaks that cost time and eroded trust.</p>
+                <p class="t-body">What we build is different because we start with the full picture: how money flows through your business, where the edge cases
+                    are, and what your team actually needs to stay on top of it without heroics.</p>
             </div>
             <div style="display:flex;flex-direction:column;gap:1rem;" data-reveal data-reveal-delay="80">
-                <!-- Image placeholder -->
-                <div class="img-placeholder" style="min-height:260px;">
-                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                    <span>Photo: Clean billing dashboard or payment confirmation screen on a laptop, professional context.</span>
+                <div style="min-height:240px; border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+                    <img
+                            src="assets/media/images/industries_fintech_main_poster.jpg"
+                            alt="A person lying on a medical bed"
+                            style="width:100%; height:100%; object-fit:cover; display:block;">
                 </div>
             </div>
         </div>
@@ -141,13 +350,20 @@
         <div style="max-width:560px;margin-bottom:3.5rem;" data-reveal>
             <div class="section-label" style="margin-bottom:1rem;">What we build</div>
             <h2 class="t-section" style="font-size:1.5rem;margin-bottom:1rem;">Practical systems for the real things businesses need.</h2>
-            <p class="t-body">Not theoretical payment architecture. The actual systems that let your business charge customers, send invoices, manage subscriptions, and know exactly where every payment stands.</p>
+            <p class="t-body">Not theoretical payment architecture. The actual systems that let your business charge customers, send invoices, manage
+                subscriptions, and know exactly where every payment stands.</p>
         </div>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;" class="three-col">
             <div class="card" style="padding:1.75rem;background:#fff;" data-reveal>
-                <div class="domain-icon" style="margin-bottom:1.25rem;"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+                <div class="domain-icon" style="margin-bottom:1.25rem;">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                        <rect x="2" y="5" width="20" height="14" rx="2"/>
+                        <line x1="2" y1="10" x2="22" y2="10"/>
+                    </svg>
+                </div>
                 <h3 class="t-card" style="margin-bottom:0.75rem;">Online Checkout & Card Payments</h3>
-                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">A checkout that works cleanly on your website or app, connected to Stripe or whichever payment provider fits your business. Card payments, failure handling, and confirmation emails all in one flow.</p>
+                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">A checkout that works cleanly on your website or app, connected to Stripe or
+                    whichever payment provider fits your business. Card payments, failure handling, and confirmation emails all in one flow.</p>
                 <div style="display:flex;flex-direction:column;gap:0.5rem;">
                     <div class="bullet-item"><span class="bullet-dot"></span>Embedded checkout on your website or app</div>
                     <div class="bullet-item"><span class="bullet-dot"></span>Card, bank transfer, and digital wallet support</div>
@@ -156,9 +372,17 @@
                 </div>
             </div>
             <div class="card" style="padding:1.75rem;background:#fff;" data-reveal data-reveal-delay="80">
-                <div class="domain-icon" style="margin-bottom:1.25rem;"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                <div class="domain-icon" style="margin-bottom:1.25rem;">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                </div>
                 <h3 class="t-card" style="margin-bottom:0.75rem;">Invoice & Billing Systems</h3>
-                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">Systems that generate and send invoices automatically, track which ones have been paid, chase overdue amounts, and give your finance team a clear view of what's outstanding without digging through emails.</p>
+                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">Systems that generate and send invoices automatically, track which ones have
+                    been paid, chase overdue amounts, and give your finance team a clear view of what's outstanding without digging through emails.</p>
                 <div style="display:flex;flex-direction:column;gap:0.5rem;">
                     <div class="bullet-item"><span class="bullet-dot"></span>Automatic invoice generation and delivery</div>
                     <div class="bullet-item"><span class="bullet-dot"></span>Payment links embedded in invoices</div>
@@ -167,9 +391,14 @@
                 </div>
             </div>
             <div class="card" style="padding:1.75rem;background:#fff;" data-reveal data-reveal-delay="160">
-                <div class="domain-icon" style="margin-bottom:1.25rem;"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                <div class="domain-icon" style="margin-bottom:1.25rem;">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
                 <h3 class="t-card" style="margin-bottom:0.75rem;">Subscription & Recurring Billing</h3>
-                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">If you charge customers on a recurring basis, the billing system needs to handle plan changes, cancellations, and failed payments without you having to manage each case individually.</p>
+                <p class="t-body" style="font-size:0.875rem;margin-bottom:1rem;">If you charge customers on a recurring basis, the billing system needs to
+                    handle plan changes, cancellations, and failed payments without you having to manage each case individually.</p>
                 <div style="display:flex;flex-direction:column;gap:0.5rem;">
                     <div class="bullet-item"><span class="bullet-dot"></span>Monthly and annual billing cycles</div>
                     <div class="bullet-item"><span class="bullet-dot"></span>Plan upgrades, downgrades, and cancellations</div>
@@ -187,10 +416,16 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;" class="two-col">
             <div data-reveal>
                 <div class="section-label" style="margin-bottom:1.25rem;">How we approach it</div>
-                <h2 class="t-section" style="font-size:1.5rem;margin-bottom:1.25rem;">Every transaction needs a traceable record. Every failure needs a clear reason.</h2>
-                <p class="t-body" style="margin-bottom:1rem;">The most frustrating payment system failure isn't a crash. It's a charge that went through on the customer's card but didn't register in your system. Or a subscription that should have cancelled but kept billing. Or an invoice that was paid but still showing as outstanding three days later.</p>
-                <p class="t-body" style="margin-bottom:1rem;">We build payment systems where every event, every status change, and every failure has a record. Your team can always look up any transaction and understand exactly what happened. That auditability is not a feature we add at the end, it's how we structure the data from the start.</p>
-                <p class="t-body">We also keep your compliance scope sensible. Card details are handled by the payment processor directly, not stored anywhere in your system, which keeps your responsibilities limited and your risk low.</p>
+                <h2 class="t-section" style="font-size:1.5rem;margin-bottom:1.25rem;">Every transaction needs a traceable record. Every failure needs a clear
+                    reason.</h2>
+                <p class="t-body" style="margin-bottom:1rem;">The most frustrating payment system failure isn't a crash. It's a charge that went through on the
+                    customer's card but didn't register in your system. Or a subscription that should have cancelled but kept billing. Or an invoice that was
+                    paid but still showing as outstanding three days later.</p>
+                <p class="t-body" style="margin-bottom:1rem;">We build payment systems where every event, every status change, and every failure has a record.
+                    Your team can always look up any transaction and understand exactly what happened. That auditability is not a feature we add at the end,
+                    it's how we structure the data from the start.</p>
+                <p class="t-body">We also keep your compliance scope sensible. Card details are handled by the payment processor directly, not stored anywhere
+                    in your system, which keeps your responsibilities limited and your risk low.</p>
             </div>
             <div style="display:flex;flex-direction:column;gap:1rem;" data-reveal data-reveal-delay="80">
                 <div class="card" style="padding:1.5rem;">
@@ -204,9 +439,12 @@
                     </div>
                 </div>
                 <!-- Image placeholder -->
-                <div class="img-placeholder" style="min-height:180px;">
-                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                    <span>Photo: Finance team reviewing transaction reports or a payment summary screen.</span>
+                <div style="min-height:180px; border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+                    <img
+                            src="assets/media/images/industries_fintech_second_poster.jpg"
+                            alt="A person lying on a medical bed"
+                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                    >
                 </div>
             </div>
         </div>
@@ -220,22 +458,31 @@
             <div style="display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;" class="cta-grid">
                 <div>
                     <h2 class="t-section" style="font-size:1.5rem;margin-bottom:0.75rem;">Need a payment or billing system?</h2>
-                    <p class="t-body">Tell us about your business and how you need to get paid. We'll come back with a clear picture of what it would take to build.</p>
+                    <p class="t-body">Tell us about your business and how you need to get paid. We'll come back with a clear picture of what it would take to
+                        build.</p>
                 </div>
                 <div style="display:flex;flex-direction:column;gap:0.75rem;flex-shrink:0;">
-                    <a href="./contact.html" class="btn-primary" style="justify-content:center;">Get in touch <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="./contact.html" class="btn-primary" style="justify-content:center;">Get in touch
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                     <a href="./solutions.html" class="btn-secondary" style="justify-content:center;">View all solutions</a>
                 </div>
             </div>
         </div>
         <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;" class="footer-grid">
             <div>
-                <a href="./index.html" class="nav-logo" style="display:inline-flex;"><span class="nav-logo-x03">X03</span><span class="nav-logo-sol">solutions</span></a>
-                <p class="t-body" style="font-size:0.875rem;max-width:280px;margin-top:0.75rem;color:#64748b;">Enterprise software, cloud infrastructure, and AI-powered systems for businesses that depend on their technology.</p>
-                <div style="margin-top:1.25rem;"><a href="mailto:sales@x03solutions.com" class="footer-link" style="font-size:0.875rem;">sales@x03solutions.com</a></div>
+                <a href="./index.html" class="nav-logo" style="display:inline-flex;"><span class="nav-logo-x03">X03</span><span
+                        class="nav-logo-sol">solutions</span></a>
+                <p class="t-body" style="font-size:0.875rem;max-width:280px;margin-top:0.75rem;color:#64748b;">Enterprise software, cloud infrastructure, and
+                    AI-powered systems for businesses that depend on their technology.</p>
+                <div style="margin-top:1.25rem;"><a href="mailto:sales@x03solutions.com" class="footer-link"
+                                                    style="font-size:0.875rem;">sales@x03solutions.com</a></div>
             </div>
             <div>
-                <div style="font-size:0.75rem;font-weight:600;color:#0f172a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Solutions</div>
+                <div style="font-size:0.75rem;font-weight:600;color:#0f172a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Solutions
+                </div>
                 <div style="display:flex;flex-direction:column;gap:0.75rem;">
                     <a href="./solutions.html#cloud" class="footer-link">Cloud & Infrastructure</a>
                     <a href="./solutions.html#software" class="footer-link">Custom Software</a>
@@ -244,7 +491,8 @@
                 </div>
             </div>
             <div>
-                <div style="font-size:0.75rem;font-weight:600;color:#0f172a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Industries</div>
+                <div style="font-size:0.75rem;font-weight:600;color:#0f172a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Industries
+                </div>
                 <div style="display:flex;flex-direction:column;gap:0.75rem;">
                     <a href="./industry-healthcare.html" class="footer-link">Healthcare</a>
                     <a href="./industry-payments.html" class="footer-link">Payments</a>
@@ -271,8 +519,21 @@
 </footer>
 
 <style>
-@media (max-width:1023px){.two-col,.three-col,.cta-grid{grid-template-columns:1fr !important;}.footer-grid{grid-template-columns:1fr 1fr !important;}}
-@media (max-width:640px){.footer-grid{grid-template-columns:1fr !important;}}
+    @media (max-width: 1023px) {
+        .two-col, .three-col, .cta-grid {
+            grid-template-columns:1fr !important;
+        }
+
+        .footer-grid {
+            grid-template-columns:1fr 1fr !important;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .footer-grid {
+            grid-template-columns:1fr !important;
+        }
+    }
 </style>
 </body>
 </html>

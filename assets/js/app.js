@@ -1,52 +1,39 @@
 // X03solutions — Main Script
 
-// ── Mega Menu (JS-controlled) ─────────────────────────────
+// ── Mega Menu (click-to-open) ─────────────────────────────
 const initMegaMenus = () => {
-    const navItems = document.querySelectorAll('.nav-item');
-    let closeTimer = null;
+    const navItems = [...document.querySelectorAll('.nav-item')]
+        .filter(i => i.querySelector('.mega-menu'));
+
+    let activeItem = null;
 
     const closeAll = () => {
-        navItems.forEach(item => {
-            item.classList.remove('mega-active');
-            item.querySelector('.mega-menu')?.classList.remove('mega-open');
-        });
+        if (!activeItem) return;
+        activeItem.classList.remove('mega-active');
+        activeItem.querySelector('.mega-menu').classList.remove('mega-open');
+        activeItem = null;
     };
 
     navItems.forEach(item => {
+        const btn  = item.querySelector('.nav-link');
         const menu = item.querySelector('.mega-menu');
-        if (!menu) return;
 
-        item.addEventListener('mouseenter', () => {
-            clearTimeout(closeTimer);
-            closeAll();
-            item.classList.add('mega-active');
-            menu.classList.add('mega-open');
-        });
-
-        item.addEventListener('mouseleave', () => {
-            closeTimer = setTimeout(() => {
-                item.classList.remove('mega-active');
-                menu.classList.remove('mega-open');
-            }, 180);
-        });
-
-        menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
-
-        menu.addEventListener('mouseleave', () => {
-            closeTimer = setTimeout(() => {
-                item.classList.remove('mega-active');
-                menu.classList.remove('mega-open');
-            }, 180);
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+            if (activeItem === item) {
+                closeAll();
+            } else {
+                closeAll();
+                activeItem = item;
+                item.classList.add('mega-active');
+                menu.classList.add('mega-open');
+            }
         });
     });
 
-    document.addEventListener('click', e => {
-        if (!e.target.closest('.nav-item')) closeAll();
-    });
-
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closeAll();
-    });
+    // Click anywhere outside closes the open menu
+    document.addEventListener('click', closeAll);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
 };
 
 // ── Navigation ────────────────────────────────────────────
