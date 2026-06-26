@@ -27,7 +27,7 @@ const initMegaMenus = () => {
             closeTimer = setTimeout(() => {
                 item.classList.remove('mega-active');
                 menu.classList.remove('mega-open');
-            }, 80);
+            }, 180);
         });
 
         menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
@@ -36,7 +36,7 @@ const initMegaMenus = () => {
             closeTimer = setTimeout(() => {
                 item.classList.remove('mega-active');
                 menu.classList.remove('mega-open');
-            }, 80);
+            }, 180);
         });
     });
 

@@ -164,9 +164,21 @@
     box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     transition: opacity 0.16s ease, transform 0.16s ease;
     z-index: 200;
+}
+
+/* Invisible bridge fills gap between nav bottom and mega-menu top */
+.mega-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: transparent;
+    pointer-events: all;
 }
 
 .mega-menu.mega-open {
