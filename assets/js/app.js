@@ -1,8 +1,55 @@
-// ============================================================
 // X03solutions — Main Script
-// ============================================================
 
-// ── Navigation ───────────────────────────────────────────────
+// ── Mega Menu (JS-controlled) ─────────────────────────────
+const initMegaMenus = () => {
+    const navItems = document.querySelectorAll('.nav-item');
+    let closeTimer = null;
+
+    const closeAll = () => {
+        navItems.forEach(item => {
+            item.classList.remove('mega-active');
+            item.querySelector('.mega-menu')?.classList.remove('mega-open');
+        });
+    };
+
+    navItems.forEach(item => {
+        const menu = item.querySelector('.mega-menu');
+        if (!menu) return;
+
+        item.addEventListener('mouseenter', () => {
+            clearTimeout(closeTimer);
+            closeAll();
+            item.classList.add('mega-active');
+            menu.classList.add('mega-open');
+        });
+
+        item.addEventListener('mouseleave', () => {
+            closeTimer = setTimeout(() => {
+                item.classList.remove('mega-active');
+                menu.classList.remove('mega-open');
+            }, 80);
+        });
+
+        menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+
+        menu.addEventListener('mouseleave', () => {
+            closeTimer = setTimeout(() => {
+                item.classList.remove('mega-active');
+                menu.classList.remove('mega-open');
+            }, 80);
+        });
+    });
+
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.nav-item')) closeAll();
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeAll();
+    });
+};
+
+// ── Navigation ────────────────────────────────────────────
 const initNav = () => {
     const nav = document.getElementById('main-nav');
     if (!nav) return;
@@ -42,7 +89,7 @@ const initNav = () => {
     });
 };
 
-// ── Scroll Reveal ────────────────────────────────────────────
+// ── Scroll Reveal ─────────────────────────────────────────
 const initScrollReveal = () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -57,7 +104,7 @@ const initScrollReveal = () => {
     document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
 };
 
-// ── Smooth anchor scroll with nav offset ─────────────────────
+// ── Smooth anchor scroll with nav offset ──────────────────
 const initSmoothScroll = () => {
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', e => {
@@ -70,8 +117,9 @@ const initSmoothScroll = () => {
     });
 };
 
-// ── Init ─────────────────────────────────────────────────────
+// ── Init ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+    initMegaMenus();
     initNav();
     initScrollReveal();
     initSmoothScroll();
